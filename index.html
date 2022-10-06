@@ -5,24 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/big-mobile.css" media="screen and (min-width:720px) and (min-height: 1280px)">
+  <link rel="stylesheet" href="./assets/css/laptop.css" media="screen and (min-width:1366px) and (min-height: 768px)">
+
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div class="body-box">
+    <article class="box-advices">
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+      <p id="number-advices">ADVICE #<span id="id-number"></span></p>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <p id="random-advices">"<span id="span-random-advices"></span>"</p>
+  
+      <img class="pattern-divider-mobile" src="./images/pattern-divider-mobile.svg" alt="pattern-divider-mobile">
+  
+      <div class="icon-dice">
+        <img src="./images/icon-dice.svg" alt="icon">
+      </div> 
+    </article>
   </div>
+
+  <footer class="attribution">
+    <p class="attribution-p">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Dcuastumal">David Bucheli</a>.</p> 
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
